@@ -14,8 +14,7 @@
 // example code from mr doob : http://mrdoob.com/lab/javascript/requestanimationframe/
 
 var canvas, context, toggle;
-var x = 1;
-var y = 1;
+
 
 init();
 animate();
@@ -34,11 +33,6 @@ function animate() {
 }
 
 function draw() {
-    context.fillStyle = 'rgb(0,0,0)';
-    context.beginPath();
-    context.arc( x, y, 10, 0, Math.PI * 2, true );
-    context.closePath();
-    context.fill();
 
     var time = new Date().getTime() * 0.002;
     var x = Math.sin( time ) * 192 + 256;
